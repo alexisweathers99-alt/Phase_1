@@ -1,0 +1,6 @@
+/var/log/syslog
+/opt/alpha/mission.txt
+MISSION SECURE: The system is yours. Do not fear the dark.
+/var/tmp/.blackout/token.txt
+9948-ABX-77
+
