@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    networks:
+       - frontend
+       - backend
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: supersecretpassword
+      WORDPRESS_DB_NAME: wordpress
+    # INSTRUCTION: Add the 'networks' block below to connect this to frontend AND backend.
+    
+
+  db:
+    image: mysql:5.7
+    networks:
+    - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecretpassword
+      MYSQL_DATABASE: wordpress
+    # INSTRUCTION: Add the 'networks' block below to connect this ONLY to the backend.
+    
+
+networks:
+  frontend:
+     driver: bridge
+  backend:
+    internal: true
