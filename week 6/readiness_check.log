@@ -1,0 +1,15 @@
+==================================================
+SESSION 16: READINESS INVENTORY
+==================================================
+Operator: Alexis Weathers
+Date: 4/21/2026
+
+Confidence Audit (Yes/No): 
+1. Nmap (Network Scanning): [ N ]
+2. Docker (Containerization): [ Y ]
+3. Linux Hardening (UFW/chmod): [ Y ]
+4. VS Code Remote-SSH: [ N ]
+
+Identify your weakest area and your plan to review it:
+[While this assignment was a breeze, I had to do it on a web base terminal because I was unbale to fix my VM in time to complete this project. I will continue to review and learn how to fix a VM so that I will be able to practice SSH and Nmap.]
+==================================================
