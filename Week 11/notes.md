@@ -1,0 +1,1 @@
+Week 11: Learned to engineer secure DMZ subnets, write strict network egress firewall rules, deploy a live Suricata IDS sensor, and utilize SysmonForLinux with XML policies to catch endpoint ransomware activity. 
