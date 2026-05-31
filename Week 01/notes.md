@@ -1,0 +1,1 @@
+Week 1: Linux Fundamentals & Command Line Navigation Focused on fluid navigation within headless Linux environments by mastering the Filesystem Hierarchy Standard (FHS) and command anatomy. Learned to manage precise Read-Write-Execute permissions, utilize special bits, and manipulate data streams using core text-processing tools like grep, sed, and awk. 
