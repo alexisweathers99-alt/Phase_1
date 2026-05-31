@@ -1,0 +1,11 @@
+--- TLAB OPERATION BLACKOUT REPORT ---
+
+1.RESTORED GATEWAY:
+defualt via 192.168.10.1 dev enp0s3
+
+2. DNS REPAIR:
+Target secure.titancorp.com mapped to 192.168.10.193
+
+3. TCP HNADSHAKE ATTEMPT:
+Observed Outbound ARP and SYN attempts to 192.168.10.193.
+Connectivity triaged; local stack restored. 
