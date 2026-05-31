@@ -1,0 +1,1 @@
+Week 2: Network Infrastructure & Protocol Interrogation Focused on identifying physical interfaces and hardware addresses to restore default gateways and network connectivity. Mastered CIDR notation and subnet masking using Python binary conversions, while also auditing application layer services to remediate DNS deception and discover hidden ports.
